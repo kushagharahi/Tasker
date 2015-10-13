@@ -10,7 +10,10 @@ namespace ProjectManagementApp.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated)
+                return View();
+            else
+                return RedirectToAction("Account", "Login");
         }
 
         public ActionResult About()

@@ -67,3 +67,5 @@ c:\users\that kusha\documents\visual studio 2015\Projects\ProjectManagementApp\P
 c:\users\that kusha\documents\visual studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.csprojResolveAssemblyReference.cache
 c:\users\that kusha\documents\visual studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.dll
 c:\users\that kusha\documents\visual studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.pdb
+C:\Users\That Kusha\Documents\Visual Studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.Migrations.projectmanagement.resources
+C:\Users\That Kusha\Documents\Visual Studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.csproj.GenerateResource.Cache
