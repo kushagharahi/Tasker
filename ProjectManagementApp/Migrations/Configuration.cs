@@ -22,11 +22,11 @@ namespace ProjectManagementApp.Migrations
             var testPassword = "123456";
             var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
 
-            var adminRole = new IdentityRole() { Id = "ProjectManager", Name = "ProjectManager" };
-            roleManager.Create(adminRole);
+            var pmRole = new IdentityRole() { Id = "ProjectManager", Name = "ProjectManager" };
+            roleManager.Create(pmRole);
 
-            var officerRole = new IdentityRole() { Id = "User", Name = "User" };
-            roleManager.Create(officerRole);
+            var userRole = new IdentityRole() { Id = "User", Name = "User" };
+            roleManager.Create(userRole);
 
             var pm = new ApplicationUser()
             {
@@ -36,7 +36,7 @@ namespace ProjectManagementApp.Migrations
             };
 
             userManager.Create(pm, testPassword);
-            userManager.AddToRole(pm.Id, adminRole.Name);
+            userManager.AddToRole(pm.Id, pmRole.Name);
 
             var user = new ApplicationUser()
             {
@@ -45,7 +45,7 @@ namespace ProjectManagementApp.Migrations
                 Email = "user@projectmanager.com"
             };
             userManager.Create(user, testPassword);
-            userManager.AddToRole(user.Id, adminRole.Name);
+            userManager.AddToRole(user.Id, userRole.Name);
         }
     }
 }

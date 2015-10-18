@@ -29,5 +29,9 @@ namespace ProjectManagementApp.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ProjectManagementApp.Models.Project> Project{ get; set; }
+
+        public System.Data.Entity.DbSet<ProjectManagementApp.Models.Tasks> Tasks { get; set; }
     }
 }

@@ -11,23 +11,9 @@ namespace ProjectManagementApp.Controllers
         public ActionResult Index()
         {
             if (User.Identity.IsAuthenticated)
-                return View();
+                return RedirectToAction("Index", "Project");
             else
-                return RedirectToAction("Account", "Login");
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+                return RedirectToAction("Login", "Account");
         }
     }
 }
