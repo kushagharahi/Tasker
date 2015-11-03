@@ -33,5 +33,7 @@ namespace ProjectManagementApp.Models
         public System.Data.Entity.DbSet<ProjectManagementApp.Models.Project> Project{ get; set; }
 
         public System.Data.Entity.DbSet<ProjectManagementApp.Models.Tasks> Tasks { get; set; }
+
+        public System.Data.Entity.DbSet<ProjectManagementApp.Models.Discussion> Discussions { get; set; }
     }
 }

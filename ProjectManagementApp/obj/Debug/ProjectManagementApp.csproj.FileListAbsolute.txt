@@ -67,7 +67,6 @@ c:\users\that kusha\documents\visual studio 2015\Projects\ProjectManagementApp\P
 c:\users\that kusha\documents\visual studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.csprojResolveAssemblyReference.cache
 c:\users\that kusha\documents\visual studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.dll
 c:\users\that kusha\documents\visual studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.pdb
-C:\Users\That Kusha\Documents\Visual Studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.Migrations.projectmanagement.resources
 C:\Users\That Kusha\Documents\Visual Studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.csproj.GenerateResource.Cache
 D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\bin\roslyn\csc.exe
 D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -142,3 +141,6 @@ D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\bin\Microso
 D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\obj\Debug\ProjectManagementApp.Migrations.init.resources
 D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\obj\Debug\ProjectManagementApp.csproj.GenerateResource.Cache
 D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\obj\Debug\ProjectManagementApp.Migrations.init1.resources
+C:\Users\That Kusha\documents\visual studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\bin\Microsoft.CSharp.dll
+C:\Users\That Kusha\documents\visual studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.Migrations.init.resources
+C:\Users\That Kusha\documents\visual studio 2015\Projects\ProjectManagementApp\ProjectManagementApp\obj\Debug\ProjectManagementApp.Migrations.init1.resources

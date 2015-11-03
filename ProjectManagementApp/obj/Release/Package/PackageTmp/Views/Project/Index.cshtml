@@ -33,7 +33,7 @@
             <td>
                 @Html.ActionLink("View Tasks", "index", "Tasks", new { id = item.Id}, null)
                 @Html.Raw(" | ")
-                @Html.ActionLink("Discussion Board", "Discussion", "Project", new { id = item.Id }, null)
+                @Html.ActionLink("Discussion Board", "Index", "Discussions", new { id = item.Id }, null)
                 @if (User.IsInRole("ProjectManager"))
                 {
                     @Html.Raw(" | ");

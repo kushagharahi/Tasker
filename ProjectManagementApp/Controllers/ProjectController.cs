@@ -20,12 +20,6 @@ namespace ProjectManagementApp.Controllers
             return View(db.Project.ToList());
         }
 
-        public ActionResult Discussion(Guid id)
-        {
-            ViewBag.ProjectId = id;
-            return View(db.Project.Where(e => e.Id == id).Include("Discussion").FirstOrDefault().Discussion);
-        }
-
         // GET: Project/Create
         [Authorize(Roles = "ProjectManager")]
         public ActionResult Create()
