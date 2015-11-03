@@ -139,3 +139,6 @@ D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\obj\Debug\P
 D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\obj\Debug\ProjectManagementApp.dll
 D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\obj\Debug\ProjectManagementApp.pdb
 D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\bin\Microsoft.CSharp.dll
+D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\obj\Debug\ProjectManagementApp.Migrations.init.resources
+D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\obj\Debug\ProjectManagementApp.csproj.GenerateResource.Cache
+D:\Libraries\Documents\GitHub\ProjectManagement\ProjectManagementApp\obj\Debug\ProjectManagementApp.Migrations.init1.resources

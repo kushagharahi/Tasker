@@ -20,6 +20,12 @@ namespace ProjectManagementApp.Controllers
             return View(db.Project.ToList());
         }
 
+        public ActionResult Discussion(Guid id)
+        {
+            ViewBag.ProjectId = id;
+            return View(db.Project.Where(e => e.Id == id).Include("Discussion").FirstOrDefault().Discussion);
+        }
+
         // GET: Project/Create
         [Authorize(Roles = "ProjectManager")]
         public ActionResult Create()
@@ -33,17 +39,17 @@ namespace ProjectManagementApp.Controllers
         [Authorize(Roles = "ProjectManager")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name")] Project projectModel)
+        public ActionResult Create([Bind(Include = "Id,Name")] Project Project)
         {
             if (ModelState.IsValid)
             {
-                projectModel.Id = Guid.NewGuid();
-                db.Project.Add(projectModel);
+                Project.Id = Guid.NewGuid();
+                db.Project.Add(Project);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(projectModel);
+            return View(Project);
         }
 
         // GET: Project/Edit/5
@@ -54,12 +60,12 @@ namespace ProjectManagementApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Project projectModel = db.Project.Find(id);
-            if (projectModel == null)
+            Project Project = db.Project.Find(id);
+            if (Project == null)
             {
                 return HttpNotFound();
             }
-            return View(projectModel);
+            return View(Project);
         }
 
         // POST: Project/Edit/5
@@ -68,15 +74,15 @@ namespace ProjectManagementApp.Controllers
         [Authorize(Roles = "ProjectManager")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name")] Project projectModel)
+        public ActionResult Edit([Bind(Include = "Id,Name")] Project Project)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(projectModel).State = EntityState.Modified;
+                db.Entry(Project).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(projectModel);
+            return View(Project);
         }
 
         // GET: Project/Delete/5
@@ -87,12 +93,12 @@ namespace ProjectManagementApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Project projectModel = db.Project.Find(id);
-            if (projectModel == null)
+            Project Project = db.Project.Find(id);
+            if (Project == null)
             {
                 return HttpNotFound();
             }
-            return View(projectModel);
+            return View(Project);
         }
 
         // POST: Project/Delete/5
@@ -101,8 +107,8 @@ namespace ProjectManagementApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
         {
-            Project projectModel = db.Project.Find(id);
-            db.Project.Remove(projectModel);
+            Project Project = db.Project.Find(id);
+            db.Project.Remove(Project);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

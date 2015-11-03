@@ -31,5 +31,7 @@ namespace ProjectManagementApp.Models
         [DisplayName("Difficulty")]
         [Required(ErrorMessage = "Difficulty Required")]
         public int Difficulty { get; set; }
+
+        
     }
 }

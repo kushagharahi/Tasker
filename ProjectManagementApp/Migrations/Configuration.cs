@@ -2,7 +2,7 @@ namespace ProjectManagementApp.Migrations
 {
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
-    using Models;
+    using ProjectManagementApp.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -17,6 +17,7 @@ namespace ProjectManagementApp.Migrations
 
         protected override void Seed(ProjectManagementApp.Models.ApplicationDbContext context)
         {
+
             var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
             if (roleManager.Roles.Count() != 0) return;
             var testPassword = "123456";

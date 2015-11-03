@@ -21,6 +21,7 @@ namespace ProjectManagementApp.Controllers
             return View(db.Project.Where(e => e.Id == id).Include("Tasks").FirstOrDefault().Tasks);
         }
 
+
         // GET: Taskss/Details/5
         public ActionResult Details(Guid? id, Guid pId)
         {
