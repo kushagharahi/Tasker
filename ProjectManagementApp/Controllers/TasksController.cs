@@ -67,7 +67,6 @@ namespace ProjectManagementApp.Controllers
         }
 
         // GET: Taskss/Edit/5
-        [Authorize(Roles = "ProjectManager")]
         public ActionResult Edit(Guid? id, Guid pId)
         {
             ViewBag.ProjectId = pId;
@@ -86,7 +85,6 @@ namespace ProjectManagementApp.Controllers
         // POST: Taskss/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [Authorize(Roles = "ProjectManager")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(Guid pId, [Bind(Include = "Id,Name,State,AssignedTo,Description,Difficulty")] Tasks Tasks)

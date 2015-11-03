@@ -52,11 +52,11 @@
             <td>
                 @if (User.IsInRole("ProjectManager"))
                 {
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id, pId = ViewBag.ProjectId });
-                    @Html.Raw(" | ");
                     @Html.ActionLink("Delete", "Delete", new { id = item.Id, pId = ViewBag.ProjectId });
                     @Html.Raw(" | ");
                 }
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id, pId = ViewBag.ProjectId })
+                @Html.Raw(" | ")
                 @Html.ActionLink("Details", "Details", new { id = item.Id, pId = ViewBag.ProjectId })
             </td>
         </tr>
